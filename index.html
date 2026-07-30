@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#050505">
+<title>Support the KNOWN Experience Summit</title>
+<style>
+:root{--black:#050505;--gold:#d6a72a;--gold2:#f2cf69;--ivory:#f6f0df;--muted:#c9c1ae;--line:rgba(214,167,42,.38)}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,rgba(214,167,42,.1),transparent 32%),var(--black);color:var(--ivory);font-family:Arial,Helvetica,sans-serif;line-height:1.5}
+.wrap{width:min(760px,calc(100% - 28px));margin:auto;padding:32px 0 50px}.card{border:1px solid var(--line);border-radius:24px;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));box-shadow:0 20px 70px rgba(0,0,0,.55)}
+header{text-align:center;padding:38px 22px 28px;border-bottom:1px solid var(--line)}.logo{width:86px;height:86px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;margin:0 auto 16px;color:var(--gold2);font-size:38px}
+h1{margin:0;font:500 clamp(34px,8vw,58px) Georgia,serif;letter-spacing:.18em;color:var(--gold2)}.sub{margin:8px 0 0;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-size:13px}.theme{margin:16px 0 0;color:var(--gold2);font:italic 22px Georgia,serif}
+main{padding:26px 22px 34px}.lead{text-align:center;color:var(--muted);margin:0 0 26px}.section{margin:28px 0 12px;color:var(--gold2);font:23px Georgia,serif}
+.options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.option{display:flex;gap:10px;align-items:flex-start;min-height:82px;padding:14px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.02);cursor:pointer}.option:hover{border-color:var(--gold);background:rgba(214,167,42,.06)}.option input{margin-top:4px;width:18px;height:18px;accent-color:var(--gold)}.option b{display:block;margin-bottom:2px}.option small{display:block;color:var(--muted)}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}input[type=text],textarea{width:100%;border:1px solid var(--line);border-radius:12px;padding:14px;background:#0b0b0b;color:var(--ivory);font:inherit;outline:none}textarea{min-height:110px;resize:vertical;margin-top:12px}
+button{width:100%;margin-top:18px;border:0;border-radius:13px;padding:16px;background:linear-gradient(135deg,#b78618,#f2cf69,#b78618);color:#090909;font-weight:800;font-size:16px;cursor:pointer}.note{text-align:center;color:var(--muted);font-size:12px}
+footer{text-align:center;border-top:1px solid var(--line);padding:22px;color:var(--muted)}footer b{color:var(--gold2)}
+@media(max-width:620px){.options,.fields{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap"><section class="card">
+<header>
+<div class="logo">♣</div>
+<h1>KNOWN</h1>
+<p class="sub">Experience Summit · Lagos · November 2026</p>
+<p class="theme">Before the Ground Forgets</p>
+</header>
+<main>
+<p class="lead">You do not have to fund the summit yourself to make a meaningful contribution. You can support Team KNOWN with resources, services, expertise, introductions, partnerships or financial support.</p>
+
+<h2 class="section">How would you like to help?</h2>
+<form id="supportForm">
+<div class="options">
+<label class="option"><input type="checkbox" name="support" value="Financial sponsorship"><span><b>Financial Support</b><small>Contribute to one or more summit needs.</small></span></label>
+<label class="option"><input type="checkbox" name="support" value="Introduce a sponsor or funder"><span><b>Introduce a Sponsor</b><small>Connect us with a funder, CSR team or foundation.</small></span></label>
+<label class="option"><input type="checkbox" name="support" value="Venue support or venue introduction"><span><b>Venue Support</b><small>Provide, recommend or introduce us to a suitable Lagos venue.</small></span></label>
+<label class="option"><input type="checkbox" name="support" value="Audio, lighting and stage production"><span><b>Production Support</b><small>Provide or connect us with audio, lighting and stage services.</small></span></label>
+<label class="option"><input type="checkbox" name="support" value="Speaker and guest hospitality"><span><b>Guest Hospitality</b><small>Support accommodation or connect us with a hotel partner.</small></span></label>
+<label class="option"><input type="checkbox" name="support" value="Transportation and logistics"><span><b>Transport & Logistics</b><small>Provide services or introduce a logistics partner.</small></span></label>
+<label class="option"><input type="checkbox" name="support" value="Event branding and signage"><span><b>Branding & Signage</b><small>Support fabrication, signage or event environment design.</small></span></label>
+<label class="option"><input type="checkbox" name="support" value="Media partnership"><span><b>Media Partnership</b><small>Offer coverage, interviews, broadcast or content collaboration.</small></span></label>
+<label class="option"><input type="checkbox" name="support" value="Professional expertise or volunteering"><span><b>Expertise</b><small>Contribute professional knowledge or specialised support.</small></span></label>
+<label class="option"><input type="checkbox" name="support" value="Organisation partnership"><span><b>Organisation Partnership</b><small>Represent a university, company, NGO, agency or professional body.</small></span></label>
+<label class="option"><input type="checkbox" name="support" value="Products or in-kind services"><span><b>Products or Services</b><small>Provide useful items, equipment or professional services.</small></span></label>
+<label class="option"><input type="checkbox" name="support" value="Other form of support"><span><b>Other</b><small>Tell us another way you would like to help.</small></span></label>
+</div>
+
+<h2 class="section">Tell us about you</h2>
+<div class="fields">
+<input id="name" type="text" placeholder="Full name" required>
+<input id="organisation" type="text" placeholder="Organisation (optional)">
+<input id="role" type="text" placeholder="Role or title (optional)">
+<input id="contact" type="text" placeholder="Phone or email" required>
+</div>
+<textarea id="message" placeholder="Add a short note, recommendation or introduction..."></textarea>
+<button type="submit">Submit via WhatsApp</button>
+<p class="note">Your selections will open in WhatsApp as a formatted message to Team KNOWN.</p>
+</form>
+</main>
+<footer><b>Perhaps your greatest contribution will be the door you open.</b><br>Every partnership begins with a conversation.</footer>
+</section></div>
+
+<script>
+const whatsappNumber="2348083999413";
+document.getElementById("supportForm").addEventListener("submit",function(e){
+ e.preventDefault();
+ const selected=[...document.querySelectorAll('input[name="support"]:checked')].map(x=>"• "+x.value);
+ if(!selected.length){alert("Please select at least one way you would like to help.");return;}
+ const name=document.getElementById("name").value.trim();
+ const organisation=document.getElementById("organisation").value.trim();
+ const role=document.getElementById("role").value.trim();
+ const contact=document.getElementById("contact").value.trim();
+ const note=document.getElementById("message").value.trim();
+ const text=[
+ "Hello Team KNOWN,","",
+ "I would like to support the KNOWN Experience Summit — Before the Ground Forgets.","",
+ "HOW I CAN HELP:",...selected,"",
+ "MY DETAILS:",
+ "Name: "+name,
+ "Organisation: "+(organisation||"Not provided"),
+ "Role: "+(role||"Not provided"),
+ "Contact: "+contact,"",
+ "Additional note:",note||"None","",
+ "Please contact me for further engagement."
+ ].join("\n");
+ window.location.href="https://wa.me/"+whatsappNumber+"?text="+encodeURIComponent(text);
+});
+</script>
+</body></html>
